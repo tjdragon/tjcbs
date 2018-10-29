@@ -1,0 +1,32 @@
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+	<changeSet author="tj" id="TJCBS">
+		<sqlFile encoding="utf8" path="../base/cbs.sql"
+			relativeToChangelogFile="true" splitStatements="true"
+			stripComments="true" />
+	</changeSet>
+
+	<changeSet author="tj" id="CUSTOMER">
+		<sqlFile encoding="utf8" path="../base/customer.sql"
+			relativeToChangelogFile="true" splitStatements="true"
+			stripComments="true" />
+	</changeSet>
+
+	<changeSet author="tj" id="CASA">
+		<sqlFile encoding="utf8" path="../base/casa.sql"
+			relativeToChangelogFile="true" splitStatements="true"
+			stripComments="true" />
+	</changeSet>
+
+	<changeSet author="tj" id="SIMPLE_LOAN">
+		<sqlFile encoding="utf8" path="../base/simple_loan.sql"
+			relativeToChangelogFile="true" splitStatements="true"
+			stripComments="true" />
+	</changeSet>
+
+</databaseChangeLog>
+

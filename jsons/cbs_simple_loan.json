@@ -1,0 +1,9 @@
+{
+	"nino": "S3452345",
+	"casaId": "885202f39e1f4bf9988ee3d158df9af3",
+	"fromDate": 20181023,
+	"principal": 1000,
+	"interest": 7.0,
+	"numberOfInstallments": 1,
+	"paymentSchedule": "MONTHS"
+}

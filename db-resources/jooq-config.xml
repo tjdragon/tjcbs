@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration>
+	<!-- Configure the database connection here -->
+	<jdbc>
+		<driver>org.apache.derby.jdbc.ClientDriver</driver>
+		<url>jdbc:derby://localhost:1527/C:/Users/1464658/_dev/runtime/local/CBS/TJCBSDB
+		</url>
+		<user>APP</user>
+		<password>*</password>
+	</jdbc>
+
+	<generator>
+		<name>org.jooq.codegen.DefaultGenerator</name>
+
+		<database>
+			<name>org.jooq.meta.derby.DerbyDatabase</name>
+			<inputSchema>APP</inputSchema>
+			<includes>cbs_.*</includes>
+			<excludes>sys.*</excludes>
+		</database>
+
+		<generate>
+			<relations>true</relations>
+			<deprecated>false</deprecated>
+			<generatedAnnotation>true</generatedAnnotation>
+			<records>true</records>
+			<pojos>true</pojos>
+			<immutablePojos>false</immutablePojos>
+			<interfaces>false</interfaces>
+			<daos>true</daos>
+			<jpaAnnotations>false</jpaAnnotations>
+			<globalObjectReferences>true</globalObjectReferences>
+			<fluentSetters>false</fluentSetters>
+		</generate>
+
+		<target>
+			<packageName>tjcbs.jooq.db</packageName>
+			<directory>
+				src/main/jooq
+			</directory>
+		</target>
+	</generator>
+</configuration>
